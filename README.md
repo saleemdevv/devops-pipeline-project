@@ -12,9 +12,6 @@ The goal of this project was to gain hands-on experience with core DevOps tools 
 ![ChatGPT Image Jun 16, 2025, 11_46_30 PM](https://github.com/user-attachments/assets/444101de-5e8f-4e15-9b6f-f978b7ae152d)
 
 
-**Example of how to reference the image:**
-`![CI/CD Architecture Diagram](architecture_diagram.png)`
-
 ---
 
 ## Technologies Used
