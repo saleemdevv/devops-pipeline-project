@@ -9,10 +9,8 @@ The goal of this project was to gain hands-on experience with core DevOps tools 
 ---
 
 ## Architecture Diagram
+![ChatGPT Image Jun 16, 2025, 11_46_30 PM](https://github.com/user-attachments/assets/444101de-5e8f-4e15-9b6f-f978b7ae152d)
 
-This diagram illustrates the flow of the CI/CD pipeline from code commit to deployment:
-
-*(**Action for you:** Create a simple diagram. You can use a free online tool like [draw.io](https://app.diagrams.net/) or even PowerPoint. Create a simple flow chart showing `GitHub` -> `Jenkins` -> `Docker` -> `AWS EC2` and save it as a .png or .jpg. Upload it to your GitHub repo and then reference it here.)*
 
 **Example of how to reference the image:**
 `![CI/CD Architecture Diagram](architecture_diagram.png)`
