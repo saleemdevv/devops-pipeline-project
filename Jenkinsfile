@@ -20,11 +20,10 @@ pipeline {
             steps {
                 echo 'Deploying the new container...'
                 script {
-                    // This checks if an old container named 'production-app' exists and stops/removes it
-                    def oldContainer = sh(script: 'docker ps -q --filter name=production-app', returnStatus: true)
-                    if (oldContainer == 0) {
-                        sh 'docker stop production-app && docker rm production-app'
-                    }
+                    // This now stops and removes the container ONLY if it exists, and won't fail if it doesn't.
+                    sh 'docker stop production-app || true'
+                    sh 'docker rm production-app || true'
+                    
                     // This runs the new container with the name 'production-app'
                     sh 'docker run -d --name production-app -p 8080:80 my-web-app:$BUILD_NUMBER'
                 }
